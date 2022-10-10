@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsiveslides.css" />
 	
 	<link href='<?php echo get_template_directory_uri() ?>/images/favicon.ico' rel='icon' type='image/x-icon'/>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/responsiveslides.js"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/js/responsiveslides.js"></script>
 	<script>
 		$(function () {
 		  $("#slider").responsiveSlides({

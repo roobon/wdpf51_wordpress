@@ -22,14 +22,14 @@ function zboom_widgets_init() {
         'before_title' => '<div class="box"><div class="heading"><h2>',
         'after_title' => '</h2></div><div class="content">',
     ) );
-     register_sidebar( array(
+     register_sidebar(array(
         'name' =>__( 'Footer sidebar', 'zboom'),
         'id' => 'sidebar-2',
         'description' => __( 'Appears on the static front page template', 'zboom' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_widget' => '<div class="col-1-4"><div class="wrap-col"><div class="box">',
+        'after_widget' => '</div></div></div></div>',
+        'before_title' => '<div class="heading"><h2>',
+        'after_title' => '</h2></div><div class="content">',
     ) );
     }
  
