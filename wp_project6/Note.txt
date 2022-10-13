@@ -1,0 +1,9 @@
+assets/img/
+<?php echo get_template_directory_uri() ?>/assets/img/
+
+assets/css/
+<?php echo get_template_directory_uri() ?>/assets/css/
+
+assets/js/
+<?php echo get_template_directory_uri() ?>/assets/js/
+
