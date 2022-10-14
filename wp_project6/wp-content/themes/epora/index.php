@@ -774,11 +774,18 @@
                </div>
             </div>
             <div class="row">
+               <?php 
+               $query = new WP_Query(array(
+                     'posts_per_page' => '3'
+               ));
+               if($query->have_posts()):
+                  while($query->have_posts()):$query->the_post();
+               ?>
                <div class="col-xl-4 col-md-6">
                   <div class="tp-blog mb-60">
                      <div class="tp-blog__thumb p-relative">
                         <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/bg/blog-img-01.jpg" alt="blog-img"></a>
+                           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
                         </div>
                         <div class="tp-blog__icon"><a href="blog-details.html"><i class="fi fi-rs-angle-right"></i></a></div>
                      </div>
@@ -787,47 +794,15 @@
                            <a href="blog-details.html">Education</a> <span>-</span> 
                            <a href="blog-details.html">Jan 21 , 2022</a>
                         </div>
-                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Educational Technology & Mobile Learning</a></h3>
-                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
+                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html"><?php the_title(); ?></a></h3>
+                        <?php the_excerpt() ?>
                      </div>
                   </div>
                </div>
-               <div class="col-xl-4 col-md-6">
-                  <div class="tp-blog mb-60">
-                     <div class="tp-blog__thumb p-relative">
-                        <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/bg/blog-img-02.jpg" alt="blog-img"></a>
-                        </div>
-                        <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
-                     </div>
-                     <div class="tp-blog__content">
-                        <div class="tp-blog__meta mb-10">
-                           <a href="blog-details.html">Education</a> <span>-</span> 
-                           <a href="blog-details.html">Jan 21 , 2022</a>
-                        </div>
-                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Computer Technology &  Fild Work Experiences</a></h3>
-                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-md-6">
-                  <div class="tp-blog mb-60">
-                     <div class="tp-blog__thumb p-relative">
-                        <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/bg/blog-img-03.jpg" alt="blog-img"></a>
-                        </div>
-                        <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
-                     </div>
-                     <div class="tp-blog__content">
-                        <div class="tp-blog__meta mb-10">
-                           <a href="blog-details.html">Education</a> <span>-</span> 
-                           <a href="blog-details.html">Jan 21 , 2022</a>
-                        </div>
-                        <h3 class="tp-blog__title mb-15"><a href="blog-details.html">Engineering Technology & Academic Learning</a></h3>
-                        <p>Dramatically supply transparent deliverab before & you backward comp internal.</p>
-                     </div>
-                  </div>
-               </div>
+              <?php 
+                  endwhile;   
+                  endif;
+              ?>
             </div>
             <div class="row">
                <div class="col-lg-12">

@@ -6,6 +6,8 @@ register_nav_menu( 'primary', __( 'Primary Menu', 'epora' ) );
 
 register_nav_menu( 'category', __( 'Category Menu', 'epora' ) );
 
+add_theme_support('post-thumbnails');
+
 /**
  * Add your scripts and styles
  */
