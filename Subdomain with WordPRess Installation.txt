@@ -1,0 +1,14 @@
+1. create subdomain: hasan.bdprogrammers.com
+2. Database Create with username and password
+Databases->MySQL Databases
+
+db: u318076185_hasanwp
+user:  u318076185_hasanwpuser
+pass: &8]urXfqUn
+
+3. Website-> Auto Installer -> Select WordPress
+
+wordpress site credentials
+user: hasanadmin
+pass: 444555@Wdpf
+email: bdprogrammers51@gmail.com
