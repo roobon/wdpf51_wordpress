@@ -5,3 +5,11 @@ Author URI: https://bdprogrammers.com
 Version: 1.0
 Text domain: zboommusic
  */
+
+ #ticker {
+    margin: 0 auto;
+    width:950px;
+    background-color:rgb(18, 17, 17);
+    padding:5px;
+    font-weight: bold;
+}
