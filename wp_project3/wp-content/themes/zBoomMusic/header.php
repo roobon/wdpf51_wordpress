@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsiveslides.css" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/eocjs-newsticker.css">
+	
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>">
 
 	<link href='<?php echo get_template_directory_uri() ?>/images/favicon.ico' rel='icon' type='image/x-icon' />
@@ -55,8 +55,10 @@
 		</div>
 	</header>
 	
-	<div id="ticker">The quick brown fox jumps over the lazy dog # The quick brown fox jumps over the lazy dog # The quick brown fox jumps over the lazy dog
-  	</div>
+	<!-- <div id="ticker">The quick brown fox jumps over the lazy dog # The quick brown fox jumps over the lazy dog # The quick brown fox jumps over the lazy dog
+  	</div> -->
+	<?php if(function_exists('NewsTicker_init')) echo NewsTicker_init(); 	
+	?>
   	
 
 	<nav>
