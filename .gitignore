@@ -1,0 +1,3 @@
+# ignore wp_project7/wpconfig.php files, but not doc/server/arch.txt
+/wp_project7/wpconfig.php
+

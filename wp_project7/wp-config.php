@@ -26,10 +26,10 @@ define( 'DB_NAME', 'wdpf51_wp_project7' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'mysql' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost:3310' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
