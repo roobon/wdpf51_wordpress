@@ -26,7 +26,7 @@ define( 'DB_NAME', 'wdpf51_wp_project7' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'mysql' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
