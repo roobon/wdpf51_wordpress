@@ -1,0 +1,6 @@
+2022-10-22T11:41:24+00:00 CRITICAL syntax error, unexpected end of file in I:\xampp742\htdocs\wdpf51_wordpress\wp_project8\wp-content\themes\dukamarket\woocommerce\archive-product.php on line 106
+
+2022-10-22T12:29:49+00:00 CRITICAL syntax error, unexpected 'basic_theme_support' (T_STRING) in I:\xampp742\htdocs\wdpf51_wordpress\wp_project8\wp-content\themes\basictheme\functions.php on line 3
+
+2022-10-22T12:54:26+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in I:\xampp742\htdocs\wdpf51_wordpress\wp_project8\wp-content\themes\basictheme\woocommerce\archive-product.php on line 107
+
