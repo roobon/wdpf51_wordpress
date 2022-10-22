@@ -1,3 +1,10 @@
-# ignore wp_project7/wpconfig.php files, but not doc/server/arch.txt
-/wp_project7/wpconfig.php
+# ignore wp_project7/wp-config.php files
 
+wp_project1/wp-config.php
+wp_project2/wp-config.php
+wp_project3/wp-config.php
+wp_project4/wp-config.php
+wp_project5/wp-config.php
+wp_project6/wp-config.php
+wp_project7/wp-config.php
+wp_project8/wp-config.php
